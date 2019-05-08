@@ -3,7 +3,7 @@ on init
     symlink /dev/block/platform/11120000.ufs/by-name/RADIO /dev/mbin0
     restorecon /dev/mbin0
 
-    write /proc/sys/net/core/netdev_max_backlog 5000
+    write /proc/sys/net/core/netdev_max_backlog 100000
 
 on fs
     chown radio system /efs
